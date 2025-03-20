@@ -1,4 +1,6 @@
 **NOTE**: for any "is_[...]" returns a boolean type variable
+**NOTE**: for any "[...]_num" returns the value of f(x) given x
+**NOTE**: for any "[...]_index" returns the value of x given f(x)
 
 {
 
@@ -17,5 +19,18 @@
         }
         
         return cond;
+    }
+}
+
+    int fibonacci_num(int num){
+    long long int a = 0, b = 1, c = 0;
+    
+    for (int i=0; i<num; i++){
+        a = b;
+        b = c;
+        c = a + b;
+    }
+    
+    return c;
     }
 }
