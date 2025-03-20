@@ -23,14 +23,14 @@
 }
 
     int fibonacci_num(int num){
-    long long int a = 0, b = 1, c = 0;
-    
-    for (int i=0; i<num; i++){
-        a = b;
-        b = c;
-        c = a + b;
-    }
-    
-    return c;
+        int a = 0, b = 1, c = 0;
+        
+        for (int i=0; i<num; i++){
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        
+        return c;
     }
 }
